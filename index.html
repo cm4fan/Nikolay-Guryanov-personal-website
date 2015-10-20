@@ -95,10 +95,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededf2', end
 </div>
 </div>
 
-<div class="tm-section zarplata" data-uk-scrollspy="{cls:'uk-animation-fade', delay:900}" style="height: 580px; background-color: #fff; padding: 0">
+<div id="zarplata-video-block" class="tm-section zarplata" data-uk-scrollspy="{cls:'uk-animation-fade', delay:900}" style="height: 580px; background-color: #fff; padding: 0">
 <div class="uk-cover uk-position-relative">
 <img class="uk-invisible" src="images/zarplata-696x580.png" width="696" height="580" alt="">
-<video class="uk-hidden-small uk-cover-object uk-position-absolute" width="696" height="580" autoplay="" loop="false" muted="" controls="true" style="margin-top: 40px">
+<video id="zarplata-video" class="uk-hidden-small uk-cover-object uk-position-absolute" width="696" height="580" muted="" controls="false" style="margin-top: 40px">
 <source src="images/zp_packshot_02.mp4" type="video/mp4">
 </video>
 <div class="uk-position-cover uk-flex uk-flex-center uk-text-center" style="top: 48px">
@@ -197,4 +197,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededf2', end
 </div>
 </body>
 <script src="ios-orientationchange-fix.js"></script>
+<script>
+$('#zarplata-video-block').on(
+'inview.uk.scrollspy', function(){
+    $('#zarplata-video').get(0).play();
+});
+</script>
 </html>
