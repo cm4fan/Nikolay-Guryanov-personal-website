@@ -149,7 +149,7 @@ h1,
 
     font-size: 34px;
     font-weight: 700;
-    line-height: 40px;
+    line-height: 36px;
     margin: 16px 0 32px 0;
 }
 h2,
@@ -7953,7 +7953,7 @@ a.uk-datepicker-table-muted {
     border-right-color: #333
 }
 .tm-section {
-    padding: 56px 0 80px 0
+    padding: 36px 0 80px 0
 }
 h3 {
     font: 26px / 36px;
