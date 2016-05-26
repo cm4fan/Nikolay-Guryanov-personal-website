@@ -1,5 +1,5 @@
 html {
-    font: 17px / 24px "Montserrat", Helvetica, Arial, sans-serif;
+    font: 17px / 24px "Lato", Helvetica, Arial, sans-serif;
     font-weight: normal;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
@@ -120,7 +120,7 @@ figure {
 *+address,
 *+fieldset,
 *+figure {
-    margin-top: 4px;
+    margin-top: 8px;
 }
 h1,
 h2,
@@ -128,7 +128,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: normal;
     color: #333;
     text-transform: none
@@ -148,13 +148,13 @@ h2+p {
 }
 
 h3+p {
-	margin-top: 4px;
+	margin-top: 8px;
 }
 
 
 h1,
 .uk-h1 {
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 48px;
     font-weight: normal;
     line-height: 48px;
@@ -162,9 +162,9 @@ h1,
 }
 h2,
 .uk-h2 {
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 30px;
-    font-weight: 300;
+    font-weight: bold;
     line-height: 30px;
     margin: 0 0 0 0;
 }
@@ -193,7 +193,7 @@ h6,
 }
 ul,
 ol {
-    padding-left: 24px
+    padding-left: 20px
 }
 ul>li>ul,
 ul>li>ol,
@@ -1098,7 +1098,7 @@ iframe {
     margin-bottom: 0
 }
 .uk-article+.uk-article {
-    margin-top: 24px
+    margin-top: 32px
 }
 .uk-article-title {
     font-size: 39px;
@@ -1423,7 +1423,7 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
     line-height: 40px;
     color: #333;
     font-size: 15px;
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: normal;
     margin-top: -1px;
     margin-left: -1px;
@@ -2454,7 +2454,7 @@ select.uk-form-width-mini {
     font-size: 0.65rem;
     text-transform: uppercase;
     letter-spacing: 0.15rem;
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 700;
     text-decoration: none;
     text-align: center;
@@ -4118,7 +4118,7 @@ select.uk-form-width-mini {
 .uk-icon-wifi:before {
     content: "\f1eb"
 }
-.uk-icon-calcuMontserratr:before {
+.uk-icon-calculator:before {
     content: "\f1ec"
 }
 .uk-icon-paypal:before {
@@ -7976,18 +7976,18 @@ h3 {
     }
 }
 
-@page  
-{ 
-    size: auto;   /* auto is the initial value */ 
+@page
+{
+    size: auto;   /* auto is the initial value */
 
-    /* this affects the margin in the printer settings */ 
-    margin: 15mm 15mm 15mm 15mm;  
-} 
+    /* this affects the margin in the printer settings */
+    margin: 15mm 15mm 15mm 15mm;
+}
 
-body  
-{ 
-    /* this affects the margin on the content before sending to printer */ 
-    margin: 0px;  
+body
+{
+    /* this affects the margin on the content before sending to printer */
+    margin: 0px;
 }
 
 li {
