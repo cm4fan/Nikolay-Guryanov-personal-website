@@ -3,5 +3,5 @@ html,body,div,p,ol,ul,a {
 }
 
 h1,h2,h3 {
-  font-family: 'Stem Text Bold';
+  font-family: 'Stem Text Bold' !important;
 }
