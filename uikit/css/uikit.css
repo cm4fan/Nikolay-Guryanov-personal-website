@@ -5979,12 +5979,12 @@ a.uk-thumbnail:focus {
 }
 .uk-container {
     box-sizing: 980px;
-    padding: 0 24px
+    padding: 0 36px
 }
 @media (min-width: 980px) {
     .uk-container {
         max-width: 960px;
-        padding: 0 36px
+        padding: 0 48px
     }
 }
 .uk-container:before,
@@ -7960,7 +7960,7 @@ a.uk-datepicker-table-muted {
     border-right-color: #333
 }
 .tm-section {
-    padding: 36px 0 80px 0
+    padding: 24px 0 64px 0
 }
 h3 {
     font: 16px / 24px;
