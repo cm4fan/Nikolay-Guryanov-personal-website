@@ -52,8 +52,6 @@
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
-<link rel="stylesheet" href="uikit/css/uikit.css" />
-<link rel="stylesheet" href="uikit/fonts/Lato/stylesheet.css" />
 
 <!-- html5.js for IE less than 9 -->
 <!--[if lt IE 9]>
@@ -68,31 +66,74 @@
 
 <script src="https://use.typekit.net/mrn4rtg.js"></script>
 <script>try{Typekit.load({ async: true });}catch(e){}</script>
+<style>
+html {
+    font-family: "antique-olive-nord",sans-serif;
+    font-weight: normal;
+    background: #fff;
+    color: #222;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
 
+a {
+    background: transparent;
+}
+
+a:active,
+a:hover {
+    outline: 0
+}
+
+a,
+.uk-link {
+    color: #0168bb;
+    text-decoration: none;
+    cursor: pointer
+}
+a:hover,
+.uk-link:hover {
+    color: #ca4700;
+    text-decoration: none
+}
+
+
+body {
+    font-family: "antique-olive-nord",sans-serif;
+    font-size: 40px;
+    line-height: 44px;
+}
+
+@media screen and (max-width: 400px) {
+    body {
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 26px;
+}
+}
+
+.header {
+	position: absolute;
+	top: 5%;
+	left: 5%;
+	max-width: 960px;
+}
+
+.footer {
+	position: absolute;
+	bottom: 5%;
+	left: 5%;
+}
+
+
+
+
+</style>
 </head>
 <body style="background-color: #FFF">
-<div class="tm-section hello">
-<div class="uk-container">
-<div class="tm-grid-truncate">
-<div class="uk-grid uk-grid-width-1-1">
-<div class="uk-width-medium-1-1 uk-width-small-1-1">
-<!-- Header -->
-<div class="uk-margin-top-remove">
-<p class="uk-h1 uk-margin-top-remove">Nikolay Guryanov is a&nbsp;user&nbsp;interface designer from Russia with passion for&nbsp;great products, data visualization and&nbsp;cartography.</p>
-</div>
-<!-- End Header -->
-
-<!-- Contacts -->
-<div class="vcard uk-margin-top uk-margin-bottom">
-<div class="email"><a href="mailto:hellonikolay@gmail.com">hellonikolay@gmail.com</a></div>
-</div>
-<!-- End Contacts -->
-
-</div>
-</div>
-</div>
-</div>
+<div class="wrap">
+  <div class="header">Nikolay Guryanov is&nbsp;a&nbsp;user interface designer from Russia with passion for great products, data visualization and cartography.</div>
+  <div class="footer"><div><a href="mailto:hellonikolay@gmail.com">Get in touch</a></div></div>
 </div>
 </body>
-<script src="ios-orientationchange-fix.js"></script>
 </html>
