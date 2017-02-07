@@ -1,5 +1,5 @@
 html {
-    font: 17px / 24px "Lato", Helvetica, Arial, sans-serif;
+    font-family: "antique-olive-nord",sans-serif;
     font-weight: normal;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
@@ -128,7 +128,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "antique-olive-nord",sans-serif;
     font-weight: normal;
     color: #333;
     text-transform: none
@@ -156,7 +156,7 @@ h3+p {
 
 h1,
 .uk-h1 {
-    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "antique-olive-nord",sans-serif;
     font-size: 48px;
     font-weight: bold;
     line-height: 48px;
@@ -164,7 +164,7 @@ h1,
 }
 h2,
 .uk-h2 {
-    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "antique-olive-nord",sans-serif;
     font-size: 30px;
     font-weight: bold;
     line-height: 30px;
@@ -229,7 +229,6 @@ blockquote {
 pre {
     padding: 10px;
     background: #fafafa;
-    font: 13px / 19px Consolas, monospace, serif;
     color: #333;
     -moz-tab-size: 4;
     tab-size: 4;
@@ -1425,7 +1424,7 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
     line-height: 40px;
     color: #333;
     font-size: 15px;
-    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "antique-olive-nord",sans-serif;
     font-weight: normal;
     margin-top: -1px;
     margin-left: -1px;
@@ -2456,7 +2455,7 @@ select.uk-form-width-mini {
     font-size: 0.65rem;
     text-transform: uppercase;
     letter-spacing: 0.15rem;
-    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "antique-olive-nord",sans-serif;
     font-weight: 700;
     text-decoration: none;
     text-align: center;
