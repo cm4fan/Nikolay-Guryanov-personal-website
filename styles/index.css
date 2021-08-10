@@ -36,10 +36,13 @@ a:hover,
 .wrap {
     display: flex;
     flex-flow: column;
-    justify-content: space-between;
-    height: 90vh;
+    justify-content: flex-start;
     padding: 24px 40px 40px;
     box-sizing: border-box;
+}
+
+.header {
+    margin-bottom: 54px;
 }
 
 @media screen and (max-width: 400px) {
