@@ -40,6 +40,7 @@ a:hover,
     padding: 24px 40px 40px;
     box-sizing: border-box;
     background: var(--back-color);
+    max-width: 1200px;
 }
 
 .header {
