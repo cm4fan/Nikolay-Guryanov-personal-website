@@ -1,6 +1,7 @@
 :root {
     --back-color: #fff;
-    --text-color: #222;
+    --contrast-color: rgb(32, 32, 32);
+    --text-color: rgb(32, 32, 32);
     --link-color: #0168bb;
     --link-hover-color: #ca4700;
 }

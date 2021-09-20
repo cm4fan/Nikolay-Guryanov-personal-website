@@ -1,7 +1,9 @@
-body,html {
+body,
+html {
     margin: 0;
     padding: 0;
 }
+
 * {
     box-sizing: border-box;
 }
@@ -98,7 +100,8 @@ a:hover,
     background-position: center;
     background-repeat: no-repeat;
     background-size: 48px;
-    transition: filter 0.1s ease-in;
+    transition: filter 0.2s ease-in;
+    border: none;
 }
 
 .switcher__radio:focus {
@@ -136,20 +139,34 @@ a:hover,
 
 }
 
-.switcher__radio:focus-visible ~ .switcher__status {
+.switcher__radio:focus-visible~.switcher__status {
     box-shadow: 0 0 0 4px black;
 }
 
-.switcher__radio--light:checked ~ .switcher__status {
+.switcher__radio--light:checked~.switcher__status {
     background-position: center top;
 }
 
-.switcher__radio--auto:checked ~ .switcher__status {
+.switcher__radio--auto:checked~.switcher__status {
     background-position: center center;
 }
 
-.switcher__radio--dark:checked ~ .switcher__status {
+.switcher__radio--dark:checked~.switcher__status {
     background-position: center bottom;
+}
+
+.switcher__radio:focus-visible:after {
+    content: attr(aria-label);
+    color: var(--back-color);
+    background: var(--contrast-color);
+    position: absolute;
+    top: 16px;
+    right: 72px;
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 16px;
+    display: flex;
+    justify-content: flex-end;
 }
 
 @media screen and (max-width: 480px) {
@@ -161,6 +178,5 @@ a:hover,
     .wrap {
         padding: 8px 16px 16px;
         height: calc(100vh - 70px);
-    }
     }
 }
