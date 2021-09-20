@@ -14,7 +14,6 @@
 
 .switcher__radio:checked {
     filter: invert(0);
-    transform: rotate(30deg);
 }
 
 .switcher__status {
