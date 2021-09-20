@@ -4,3 +4,18 @@
     --link-color: #0168bb;
     --link-hover-color: #ca4700;
 }
+
+
+/* Switcher */
+
+.switcher__radio {
+    filter: invert(0);
+}
+
+.switcher__radio:checked {
+    filter: invert(1);
+}
+
+.switcher__status {
+    filter: invert(0);
+}

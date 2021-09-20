@@ -47,18 +47,109 @@ a:hover,
     display: flex;
     flex-flow: column;
     justify-content: flex-start;
-    padding: 24px 40px 40px;
+    padding: 48px;
     box-sizing: border-box;
-    max-width: 1200px;
     height: 100vh;
 }
 
 .header {
     flex-grow: 1;
+    max-width: 1200px;
 }
 
 .footer {
     flex-grow: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+
+/* Switcher */
+
+.switcher {
+    position: relative;
+    margin: 0;
+    padding: 4px;
+    display: grid;
+    grid-template-columns: 1fr;
+    border: none;
+    z-index: 0;
+}
+
+/* Switcher Legend */
+
+.switcher__legend {
+    position: absolute;
+    opacity: 0;
+    left: -99999px;
+    pointer-events: none;
+}
+
+/* Switcher Radio */
+
+.switcher__radio {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+    width: 64px;
+    height: 64px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 48px;
+    transition: filter 0.1s ease-in;
+}
+
+.switcher__radio:focus {
+    outline: none;
+}
+
+.switcher__radio--light {
+    background-image: url('../icons/light.svg');
+}
+
+.switcher__radio--auto {
+    background-image: url('../icons/auto.svg');
+}
+
+.switcher__radio--dark {
+    background-image: url('../icons/dark.svg');
+}
+
+/* Switcher Status */
+
+.switcher__status {
+    position: absolute;
+    padding: 4px;
+    top: 4px;
+    bottom: 4px;
+    left: 4px;
+    width: 64px;
+    z-index: -1;
+    border-radius: 36px;
+    background-repeat: no-repeat;
+    background-image: url('../icons/status.svg');
+    background-size: 64px;
+    background-position: center center;
+    transition: background-position 0.2s ease-in;
+
+}
+
+.switcher__radio:focus-visible ~ .switcher__status {
+    box-shadow: 0 0 0 4px black;
+}
+
+.switcher__radio--light:checked ~ .switcher__status {
+    background-position: center top;
+}
+
+.switcher__radio--auto:checked ~ .switcher__status {
+    background-position: center center;
+}
+
+.switcher__radio--dark:checked ~ .switcher__status {
+    background-position: center bottom;
 }
 
 @media screen and (max-width: 480px) {
@@ -69,5 +160,7 @@ a:hover,
 
     .wrap {
         padding: 8px 16px 16px;
+        height: calc(100vh - 70px);
+    }
     }
 }

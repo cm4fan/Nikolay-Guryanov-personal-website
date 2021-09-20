@@ -5,3 +5,16 @@
     --link-hover-color: #e75100;
 }
 
+/* Switcher */
+
+.switcher__radio {
+    filter: invert(1);
+}
+
+.switcher__radio:checked {
+    filter: invert(0);
+}
+
+.switcher__status {
+    filter: invert(1);
+}
