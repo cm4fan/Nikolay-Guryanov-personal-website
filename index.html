@@ -1,92 +1,96 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Nikolay Guryanov</title>
-        <meta name="description" content="User interface designer. Web, mobile apps, data visualization and cartography">
-        <meta name="color-scheme" content="light dark">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
 
-        <!-- Old browsers theme support -->
-        <script>
-            if (matchMedia('(prefers-color-scheme: dark)').media === 'not all') {
-                document.documentElement.style.display = 'none';
-                document.head.insertAdjacentHTML('beforeend', '<link rel="stylesheet" href="styles/light.css" onload="document.documentElement.style.display=\'\'">');
-            }
-        </script>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nikolay Guryanov</title>
+    <meta name="description" content="User interface designer. Web, mobile apps, data visualization and cartography">
+    <meta name="color-scheme" content="light dark">
 
-        <link href="styles/index.css" rel="stylesheet">
-        <link href="styles/light.css" rel="stylesheet" media="(prefers-color-scheme:light)">
-        <link
-        href="styles/dark.css" rel="stylesheet" media="(prefers-color-scheme:dark)">
+    <!-- Old browsers theme support -->
+    <script>
+        if (matchMedia('(prefers-color-scheme: dark)').media === 'not all') {
+            document.documentElement.style.display = 'none';
+            document.head.insertAdjacentHTML('beforeend',
+                '<link rel="stylesheet" href="styles/light.css" onload="document.documentElement.style.display=\'\'">'
+                );
+        }
+    </script>
 
-        <!-- Twitter-->
-        <meta property="twitter:title" content="Nikolay Guryanov"/>
-        <meta property="twitter:description" content="User interface designer. Web, mobile apps, data visualization and cartography"/>
-        <meta property="twitter:site" content="@cm4fan"/>
-        <meta property="twitter:url" content="http://nikolayguryanov.com/"/>
-        <meta property="twitter:card" content="summary_large_image"/>
-        <meta
-        property="twitter:image" content="http://nikolayguryanov.com/images/og-image-3.png"/>
-        <!-- Facebook-->
-        <meta property="og:url" content="http://nikolayguryanov.com/"/>
-        <meta property="og:description" content="User interface designer. Web, mobile apps, data visualization and cartography"/>
-        <meta property="og:locale" content="en_US"/>
-        <meta property="og:type" content="article"/>
-        <meta property="og:title" content="Nikolay Guryanov"/>
-        <meta
-        property="og:site_name" content="Nikolay Guryanov"/>
-        <!-- Viber image-->
-        <meta
-        property="og:image" content="http://nikolayguryanov.com/images/og-image-small.png"/>
-        <!-- Facebook image-->
-        <meta
-        property="og:image" content="http://nikolayguryanov.com/images/og-image-3.png"/>
-        <!-- Telegram & WhatsApp image-->
-        <meta
-        property="og:image" content="http://nikolayguryanov.com/images/og-image-small.png"/>
+    <link href="styles/index.css" rel="stylesheet">
+    <link href="styles/light.css" rel="stylesheet" media="(prefers-color-scheme:light)">
+    <link href="styles/dark.css" rel="stylesheet" media="(prefers-color-scheme:dark)">
 
-        <!--Favicons-->
-        <link rel="apple-touch-icon" sizes="57x57" href="images/icons/apple-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="images/icons/apple-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="images/icons/apple-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="images/icons/apple-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="images/icons/apple-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="images/icons/apple-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="images/icons/apple-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="images/icons/apple-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-icon-180x180.png">
-        <link rel="icon" type="image/png" sizes="192x192" href="images/icons/android-icon-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="images/icons/favicon-96x96.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
-        <link rel="manifest" href="images/icons/manifest.json">
-        <meta name="msapplication-TileColor" content="#ffffff">
-        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-        <meta name="theme-color" content="#ffffff">
-    </head>
-    <body>
-        <div class="wrap">
-            <div class="header">Nikolay Guryanov is&nbsp;a&nbsp;user interface designer from Russia with passion for great products, data visualization and cartography.</div>
-            <div class="footer">
-                <div class="contacts">
-                    <a href="mailto:hellonikolay@gmail.com">Get in touch</a>
-                </div>
-                <div class="theme">
-                    <fieldset class="switcher" tabindex="0">
-                        <legend class="switcher__legend">Схема</legend>
-                        <input class="switcher__radio switcher__radio--light" type="radio" name="color-scheme" value="light" aria-label="Светлая">
-                        <input class="switcher__radio switcher__radio--auto" type="radio" name="color-scheme" value="auto" aria-label="Системная" checked="">
-                        <input class="switcher__radio switcher__radio--dark" type="radio" name="color-scheme" value="dark" aria-label="Тёмная">
-                        <div class="switcher__status"></div>
-                    </fieldset>
-                </div>
+    <!-- Twitter-->
+    <meta property="twitter:title" content="Nikolay Guryanov" />
+    <meta property="twitter:description"
+        content="User interface designer. Web, mobile apps, data visualization and cartography" />
+    <meta property="twitter:site" content="@cm4fan" />
+    <meta property="twitter:url" content="http://nikolayguryanov.com/" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:image" content="http://nikolayguryanov.com/images/og-image-3.png" />
+    <!-- Facebook-->
+    <meta property="og:url" content="http://nikolayguryanov.com/" />
+    <meta property="og:description"
+        content="User interface designer. Web, mobile apps, data visualization and cartography" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Nikolay Guryanov" />
+    <meta property="og:site_name" content="Nikolay Guryanov" />
+    <!-- Viber image-->
+    <meta property="og:image" content="http://nikolayguryanov.com/images/og-image-small.png" />
+    <!-- Facebook image-->
+    <meta property="og:image" content="http://nikolayguryanov.com/images/og-image-3.png" />
+    <!-- Telegram & WhatsApp image-->
+    <meta property="og:image" content="http://nikolayguryanov.com/images/og-image-small.png" />
+
+    <!--Favicons-->
+    <link rel="apple-touch-icon" sizes="57x57" href="images/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
+    <link rel="manifest" href="images/icons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header">
+            <h1>Nikolay Guryanov</h1>
+            <p class="tagline">User interface designer from Russia with passion for great products, data visualization and
+                cartography.</p>
+        </div>
+        <div class="footer">
+            <div class="contacts">
+                <a href="mailto:hellonikolay@gmail.com">Get in touch</a>
+            </div>
+            <div class="theme">
+                <fieldset class="switcher" tabindex="0">
+                    <legend class="switcher__legend">Схема</legend>
+                    <input class="switcher__radio switcher__radio--light" type="radio" name="color-scheme" value="light"
+                        aria-label="Светлая">
+                    <input class="switcher__radio switcher__radio--auto" type="radio" name="color-scheme" value="auto"
+                        aria-label="Системная" checked="">
+                    <input class="switcher__radio switcher__radio--dark" type="radio" name="color-scheme" value="dark"
+                        aria-label="Тёмная">
+                    <div class="switcher__status"></div>
+                </fieldset>
             </div>
         </div>
-        <script src="scripts/index.js"></script>
-    </body>
+    </div>
+    <script src="scripts/index.js"></script>
+</body>
+
 </html>

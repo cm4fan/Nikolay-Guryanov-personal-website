@@ -6,6 +6,24 @@
     --link-hover-color: #e75100;
 }
 
+h1 {
+    font-family: 'PP Formula Condensed';
+    text-transform: uppercase;
+    font-size: 264px;
+    line-height: 220px;
+    font-style: normal;
+    padding-top: 40px;
+    margin: 0;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-image: url('../images/header-text-texture-dark.png');
+    background-position: 0 -159px;
+    background-repeat: repeat-x;
+    background-size: 70%;
+    background-clip: text;
+}
+
 /* Switcher */
 
 .switcher__radio {

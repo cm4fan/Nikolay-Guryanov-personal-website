@@ -32,17 +32,42 @@ a:hover {
     outline: 0;
 }
 
-a,
-.uk-link {
+a {
     color: var(--link-color);
     text-decoration: none;
     cursor: pointer;
 }
 
-a:hover,
-.uk-link:hover {
+a:hover {
     color: var(--link-hover-color);
     text-decoration: none;
+}
+
+
+h1 {
+    font-family: 'PP Formula Condensed';
+    text-transform: uppercase;
+    font-size: 264px;
+    line-height: 220px;
+    font-style: normal;
+    padding-top: 40px;
+    margin: 0;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-image: url('../images/header-text-texture-light.png');
+    background-position: 0 -159px;
+    background-repeat: repeat-x;
+    background-size: 70%;
+    background-clip: text;
+}
+
+.tagline,
+.contacts {
+    font-family: 'PP Editorial New', sans-serif;
+    font-size: 32px;
+    line-height: 48px;
+    font-style: italic;
 }
 
 .wrap {
@@ -71,11 +96,12 @@ a:hover,
 /* Switcher */
 
 .switcher {
-    position: relative;
+    position: absolute;
+    top: 32px;
+    right: 32px;
     margin: 0;
-    padding: 4px;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     border: none;
     z-index: 0;
 }
@@ -161,9 +187,37 @@ a:hover,
         line-height: 32px;
     }
 
+    h1 {
+        font-size: 108px;
+        line-height: 90px;
+        padding-top: 40px;
+        margin: 0;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-image: url('../images/header-text-texture-light.png');
+        background-position: 0 -70px;
+        background-repeat: repeat-x;
+        background-size: 30%;
+        background-clip: text;
+    }
+
     .wrap {
         padding: 8px 16px 16px;
         height: calc(100vh - 70px);
+    }
+
+    /* Switcher */
+
+    .switcher {
+        position: absolute;
+        bottom: 32px;
+        right: 32px;
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        border: none;
+        z-index: 0;
     }
 
     /* Switcher Radio */
