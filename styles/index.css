@@ -54,17 +54,16 @@ h1 {
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     -moz-background-clip: text;
-    background-position: 0 -159px;
+    background-position: 0 -150px;
     background-repeat: repeat-x;
-    background-size: 70%;
-    background-clip: text;
+    background-size: 85%;
 }
 
 .tagline,
 .contacts {
     font-family: 'PP Editorial New', sans-serif;
     font-size: 32px;
-    line-height: 48px;
+    line-height: 1.5;
     font-style: italic;
 }
 
@@ -73,7 +72,6 @@ h1 {
 }
 
 .contacts {
-    position: absolute;
     bottom: 64px;
     left: 32px;
     display: flex;
@@ -99,15 +97,15 @@ h1 {
 .wrap {
     display: flex;
     flex-flow: column;
-    justify-content: flex-start;
+    justify-content: space-between;
     padding: 48px;
     box-sizing: border-box;
     height: 100vh;
-    min-height: 600px;
+    min-height: 800px;
 }
 
 .header {
-    width: 1200px;
+    width: 960px;
 }
 
 .footer {
@@ -122,7 +120,7 @@ h1 {
 /* Switcher */
 
 .switcher {
-    position: absolute;
+    position: relative;
     top: 32px;
     right: 32px;
     margin: 0;
@@ -225,8 +223,13 @@ h1 {
         background-size: 70%;
     }
 
-    .tagline {
-        max-width: 720px;
+    .tagline, .contacts {
+        font-size: 24px;
+        max-width: 90%;
+    }
+
+    .wrap {
+        min-height: 600px;
     }
 
 }
@@ -251,6 +254,7 @@ h1 {
     .wrap {
         padding: 8px 16px 16px;
         height: calc(100vh - 70px);
+        min-height: 400px;
     }
 
     .header {
