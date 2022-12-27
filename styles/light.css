@@ -1,27 +1,14 @@
 :root {
     --back-color: #73F7FF;
-    --contrast-color:  #1172CB;
     --text-color: rgb(32, 32, 32);
+    --text-contrast-color: rgb(216, 216, 216);
+    --contrast-color: rgb(32, 32, 32);
     --link-color: #1172CB;
     --link-hover-color: #CB1111;
 }
 
 h1 {
-    font-family: 'PP Formula Condensed';
-    text-transform: uppercase;
-    font-size: 264px;
-    line-height: 220px;
-    font-style: normal;
-    padding-top: 40px;
-    margin: 0;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
     background-image: url('../images/header-text-texture-light.png');
-    background-position: 0 -159px;
-    background-repeat: repeat-x;
-    background-size: 70%;
-    background-clip: text;
 }
 
 
@@ -37,4 +24,12 @@ h1 {
 
 .switcher__status {
     filter: invert(0);
+}
+
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 20px;
+        line-height: 32px;
+    }
 }

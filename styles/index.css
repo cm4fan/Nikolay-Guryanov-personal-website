@@ -43,7 +43,6 @@ a:hover {
     text-decoration: none;
 }
 
-
 h1 {
     font-family: 'PP Formula Condensed';
     text-transform: uppercase;
@@ -55,7 +54,6 @@ h1 {
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     -moz-background-clip: text;
-    background-image: url('../images/header-text-texture-light.png');
     background-position: 0 -159px;
     background-repeat: repeat-x;
     background-size: 70%;
@@ -70,6 +68,35 @@ h1 {
     font-style: italic;
 }
 
+.tagline {
+    max-width: 45ch;
+}
+
+.contacts {
+    position: absolute;
+    bottom: 64px;
+    left: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+}
+
+.contacts a {
+    padding: 16px 24px 12px;
+    border-radius: 100px;
+    background-color: var(--contrast-color);
+    color: var(--text-contrast-color);
+    transition: all 0.1s ease-in;
+    transform-origin: center;
+}
+
+.contacts a:hover {
+    color: var(--link-hover-color);
+    padding: 20px 28px 16px;
+    margin-bottom: -4px;
+    margin-left: -4px;
+}
+
 .wrap {
     display: flex;
     flex-flow: column;
@@ -80,8 +107,7 @@ h1 {
 }
 
 .header {
-    flex-grow: 1;
-    max-width: 1200px;
+    width: 1200px;
 }
 
 .footer {
@@ -181,6 +207,30 @@ h1 {
     background-position: center bottom;
 }
 
+@media screen and (max-width: 960px) {
+    body {
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .header {
+        width: 720px;
+    }
+
+    h1 {
+        font-size: 164px;
+        line-height: 137px;
+        background-position: 0px -77px;
+        background-repeat: repeat-x;
+        background-size: 70%;
+    }
+
+    .tagline {
+        max-width: 720px;
+    }
+
+}
+
 @media screen and (max-width: 480px) {
     body {
         font-size: 20px;
@@ -190,21 +240,21 @@ h1 {
     h1 {
         font-size: 108px;
         line-height: 90px;
-        padding-top: 40px;
-        margin: 0;
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
-        -moz-background-clip: text;
-        background-image: url('../images/header-text-texture-light.png');
-        background-position: 0 -70px;
-        background-repeat: repeat-x;
-        background-size: 30%;
-        background-clip: text;
+        background-position: 0px -38px;
+        background-size: 93%;
+    }
+
+    .tagline {
+        max-width: 95%;
     }
 
     .wrap {
         padding: 8px 16px 16px;
         height: calc(100vh - 70px);
+    }
+
+    .header {
+        width: 360px;
     }
 
     /* Switcher */
